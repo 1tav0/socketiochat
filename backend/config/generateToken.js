@@ -7,7 +7,7 @@ const generateToken = (id, res) => {
     httpOnly: true, //prevent XSS attacks cross-site scripting attacks (users cannot access this cookie via js)
     maxAge: 15 * 24 * 60 * 60 * 1000,
     sameSite: "strict", // CSTF attacks cross-site request forgery attacks
-    // secure: process.env.NODE_ENV !== "development"
+    secure: process.env.NODE_ENV !== "development"
   })
   return token;
 }
