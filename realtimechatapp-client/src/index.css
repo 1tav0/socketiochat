@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url("/planets.jpg");
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url("/uchiha.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
