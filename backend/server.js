@@ -39,9 +39,6 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "realtimechatapp-client", "dist", "index.html"));
 })
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("realtimechatapp-client/dist"))
-}
 
 // server
 const start = async () => {
