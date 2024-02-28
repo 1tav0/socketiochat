@@ -1,0 +1,53 @@
+1. Packages Needed for Backend: 
+  $ npm install express dotenv cookie-parser bcryptjs mongoose socket.io jsonwebtoken
+
+// visit tailwindcss vite installation
+2. Packages Needed for Frontend: 
+
+  npm install -D tailwindcss postcss autoprefixer
+  npx tailwindcss init -p
+
+3. copy and paste to tailwind.config.js file this: 
+
+  /** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+
+4. copy and paste to index.css 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+5. google Daisy Ui 
+follow the steps in the docs
+
+1. Install daisyUI:
+
+$ npm i -D daisyui@latest
+
+2. Then add daisyUI to your tailwind.config.js files:
+module.exports = {
+  //...
+  plugins: [require("daisyui")],
+}
+
+the daisy comes into place for knowing how to make a input for example for the login component just search up input and get the tailwind for the component 
+- also google tailwindcss glassmorphism for the glass effect in tailwind
+
+- also check box component tailwind css in daisy docs just search up check box
+
+- also form from daisy ui 
+- also the chat bubble from daisy ui
+
+**********Zustand*********
+- to make a global state for all our application as an alternative to context
